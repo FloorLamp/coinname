@@ -33,7 +33,6 @@
     .box {
       display: inline-block;
       width: 550px;
-      max-width: 80%;
       margin-top: 50px;
       padding: 20px 0;
       border-radius: 10px;
@@ -56,42 +55,42 @@
       user-select: none;
     }
     .reload {
-        width: 18px;
-        height: 9px;
-        border-style: solid;
-        border-width: 0px 3px 3px 3px;
-        border-color: #eee;
-        -webkit-border-radius: 0 0 50px 50px;
-        -moz-border-radius: 0 0 50px 50px;
-        border-radius: 0 0 50px 50px;
-        position: absolute;
-        top: 18px;
-        left: 2px;
+      width: 18px;
+      height: 9px;
+      border-style: solid;
+      border-width: 0px 3px 3px 3px;
+      border-color: #eee;
+      -webkit-border-radius: 0 0 50px 50px;
+      -moz-border-radius: 0 0 50px 50px;
+      border-radius: 0 0 50px 50px;
+      position: absolute;
+      top: 18px;
+      left: 2px;
     }
     .reload:after {
-        content: '';
-        width: 9px;
-        height: 9px;
-        border-style: solid;
-        border-width: 3px 0 0 3px;
-        border-color: #eee;
-        -webkit-border-radius: 50px 0 0 0;
-        -moz-border-radius: 50px 0 0 0;
-        border-radius: 50px 0 0 0;
-        position: absolute;
-        left: -3px;
-        bottom: 9px;
+      content: '';
+      width: 9px;
+      height: 9px;
+      border-style: solid;
+      border-width: 3px 0 0 3px;
+      border-color: #eee;
+      -webkit-border-radius: 50px 0 0 0;
+      -moz-border-radius: 50px 0 0 0;
+      border-radius: 50px 0 0 0;
+      position: absolute;
+      left: -3px;
+      bottom: 9px;
     }
     .reload:before {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 6px;
-        border-color: transparent transparent transparent #eee;
-        bottom: 13px;
-        left: 9px;
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px;
+      border-color: transparent transparent transparent #eee;
+      bottom: 13px;
+      left: 9px;
     }
     .tweet {
       margin-top: 20px;
@@ -106,6 +105,22 @@
       color: #eee;
       text-decoration: none;
     }
+    @media(max-width: 600px) {
+      .box {
+        width: auto;
+        font-size: 40px;
+        padding: 20px;
+      }
+      .icon {
+        top: 105px;
+        right: 0;
+        left: 0;
+        margin: auto;
+      }
+      .tweet {
+        margin-top: 60px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -118,11 +133,11 @@
     </div>
   </div>
   <div class="tweet">
-    <a id="tweet" href="https://twitter.com/intent/tweet?url=blocksonblocksonblocks.com&text=Need+a+name+for+your+%23bitcoin+startup%3F&via=floatfloatboat">Tweet this</a>
+    <a id="tweet" href="https://twitter.com/intent/tweet?url=blocksonblocksonblocks.com&text=Need+a+name+for+your+%23bitcoin+startup%3F&via=floatfloatboat">Tweet</a>
   </div>
 </div>
 <footer>
-  <span>Made by <a href="https://twitter.com/floatfloatboat" target="_blank">@floatfloatboat</a></span>
+  <span>By <a href="https://twitter.com/floatfloatboat" target="_blank">@floatfloatboat</a></span>
 </footer>
 <script>
   $(function() {
