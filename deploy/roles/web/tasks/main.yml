@@ -21,12 +21,6 @@
   tags:
     - provision
 
-- name: create webapp directory
-  sudo: yes
-  file: path={{webapp_dir}} state=directory mode=777
-  tags:
-    - provision
-
 - name: checkout latest
   git: repo={{repository}} dest={{app_dir}} version={{branch}} key_file=/home/{{app_user}}/.ssh/id_rsa accept_hostkey=True
   notify: restart webapp
