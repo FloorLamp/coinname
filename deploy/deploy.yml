@@ -1,0 +1,6 @@
+---
+
+- hosts: webservers
+  user: "{{app_user}}"
+  roles:
+    - web

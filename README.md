@@ -1,4 +1,4 @@
-Blocks on blocks on blocks
+Coinname.me
 ============
 
 Bitcoin Startup Name Generator

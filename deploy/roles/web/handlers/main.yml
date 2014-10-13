@@ -1,0 +1,13 @@
+---
+
+- name: restart nginx
+  sudo: yes
+  service: name=nginx state=restarted
+
+- name: restart supervisor
+  sudo: yes
+  service: name=supervisor state=restarted
+
+- name: restart webapp
+  sudo: yes
+  supervisorctl: name={{app_name}} state=restarted

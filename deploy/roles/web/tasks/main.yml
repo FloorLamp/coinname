@@ -1,0 +1,43 @@
+---
+
+- name: update apt
+  sudo: yes
+  apt: update_cache=yes
+  tags:
+    - provision
+
+- name: install webapp and dependencies
+  sudo: yes
+  apt: name={{item}} state=latest
+  with_items:
+    - fail2ban
+    - gcc
+    - git
+    - python-dev
+    - python-pip
+    - python-virtualenv
+    - supervisor
+    - nginx
+  tags:
+    - provision
+
+- name: create webapp directory
+  sudo: yes
+  file: path={{webapp_dir}} state=directory mode=777
+  tags:
+    - provision
+
+- name: checkout latest
+  git: repo={{repository}} dest={{app_dir}} version={{branch}} key_file=/home/{{app_user}}/.ssh/id_rsa accept_hostkey=True
+  notify: restart webapp
+  tags:
+    - flask
+
+- include: supervisor.yml
+
+- name: install python requirements
+  pip:
+    requirements={{app_dir}}/requirements.txt
+    virtualenv={{venv_dir}}
+  tags:
+    - flask

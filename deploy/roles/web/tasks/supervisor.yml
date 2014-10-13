@@ -1,0 +1,26 @@
+---
+
+- name: create virtualenv
+  command: virtualenv {{venv_dir}} creates={{venv_dir}}
+  tags:
+    - provision
+
+- name: copy gunicorn config
+  template: src=files/gunicorn_start.j2 dest={{venv_dir}}/bin/gunicorn_start mode=775
+  notify: restart webapp
+  tags:
+    - provision
+
+- name: create gunicorn log directory
+  file: path={{log_dir}} state=directory
+  tags:
+    - provision
+
+- name: copy supervisor config
+  sudo: yes
+  template: src=files/supervisor.conf.j2 dest=/etc/supervisor/conf.d/{{app_name}}.conf
+  notify:
+    - restart supervisor
+    - restart webapp
+  tags:
+    - provision

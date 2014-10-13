@@ -1,0 +1,10 @@
+---
+
+repository: git@github.com:FloorLamp/coinname.git
+app_name: coinname
+app_user: wang
+app_group: wang
+webapp_dir: /home/wang
+app_dir: /home/wang/coinname
+venv_dir: /home/wang/venv
+log_dir: /home/wang/logs
