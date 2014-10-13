@@ -15,7 +15,7 @@ export PYTHONPATH={{app_dir}}:$PYTHONPATH
 RUNDIR=$(dirname $SOCKFILE)
 test -d $RUNDIR || mkdir -p $RUNDIR
 
-exec {{venv_dir}}/bin/gunicorn app:app \
+exec {{venv_dir}}/bin/gunicorn server:app \
   --name=$NAME \
   --workers=$NUM_WORKERS \
   --user=$USER --group=$GROUP \

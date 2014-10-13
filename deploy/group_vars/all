@@ -1,6 +1,7 @@
 ---
 
 repository: git@github.com:FloorLamp/coinname.git
+branch: master
 app_name: coinname
 app_user: wang
 app_group: wang

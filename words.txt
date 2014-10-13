@@ -18,6 +18,7 @@
 -er
 -ery
 -ful
+-geist
 -gon
 -ian
 -ible
@@ -45,6 +46,7 @@
 -ix
 -ize
 -le
+leer
 -ling
 -ly
 -lytics
@@ -246,6 +248,7 @@ analysis
 analyst
 analyze
 ancestor
+anchor
 ancient
 angel
 anger
@@ -398,6 +401,7 @@ away
 awful
 ax
 axe
+axon
 b
 baby
 back
@@ -535,6 +539,7 @@ blame
 blank
 blanket
 blast
+blaze
 blend
 bless
 blessing
@@ -561,6 +566,7 @@ bold
 bolt
 bomb
 bombing
+bon
 bond
 bone
 boner
@@ -1074,6 +1080,7 @@ correlation
 correspondent
 corridor
 corruption
+cortex
 cosmo-
 cost
 costume
@@ -1099,6 +1106,7 @@ course
 court
 courtroom
 cousin
+cove
 cover
 coverage
 cow
@@ -1308,6 +1316,7 @@ development
 device
 devil
 devote
+dew
 dex
 di-
 dia-
@@ -1372,6 +1381,7 @@ discrimination
 discuss
 discussion
 disease
+disguise
 dish
 disk
 dismiss
@@ -1383,6 +1393,7 @@ diss
 dissolve
 distance
 distant
+distill
 distinct
 distinction
 distinctive
@@ -1857,6 +1868,8 @@ floss
 flour
 flow
 flower
+flu
+flurry
 fluent
 fluff
 fluid
@@ -2023,6 +2036,7 @@ gin
 ginger
 girl
 girlfriend
+gist
 git
 give
 given
@@ -2043,6 +2057,7 @@ glory
 gloss
 glove
 glow
+glue
 go
 goal
 goat
@@ -2065,6 +2080,7 @@ governor
 grab
 grace
 grade
+gradient
 gradual
 graduate
 graduation
@@ -2127,6 +2143,7 @@ guy
 gym
 h
 ha
+hawk
 habit
 habitat
 hack
@@ -2138,6 +2155,7 @@ half
 halfway
 hall
 hallway
+halo
 ham
 hammer
 hand
@@ -2160,6 +2178,7 @@ harvest
 hash
 hasher
 hashing
+haste
 hat
 hatch
 hate
@@ -2234,6 +2253,7 @@ hoard
 hockey
 hodl
 hoe
+hog
 hold
 holder
 hole
@@ -2247,6 +2267,7 @@ homework
 honest
 honey
 honor
+hooch
 hood
 hook
 hoop
@@ -2403,6 +2424,7 @@ innovation
 innovative
 input
 inquiry
+insane
 insect
 insert
 inside
@@ -2586,6 +2608,9 @@ kong
 ku
 kush
 l
+latte
+lava
+liar
 lab
 label
 labor
@@ -2639,6 +2664,7 @@ lean
 leap
 learn
 learning
+lease
 least
 leather
 leave
@@ -2754,11 +2780,13 @@ luge
 lunch
 lung
 lunge
+lure
 lurk
 lust
 lyfe
 lyte
 m
+mimic
 mac
 mace
 machine
@@ -2956,6 +2984,7 @@ monument
 moo
 mood
 moon
+moor
 moose
 mop
 moral
@@ -2966,6 +2995,7 @@ mortality
 mortgage
 moss
 most
+motel
 mother
 motion
 motivate
@@ -3070,6 +3100,7 @@ nobody
 nod
 node
 noise
+nom
 nomination
 nominee
 non-
@@ -3231,6 +3262,7 @@ owl
 own
 owner
 ownership
+ox
 oxy
 oxygen
 oyster
@@ -3256,6 +3288,7 @@ palace
 pale
 palm
 pan
+pane
 panel
 pang
 panic
@@ -3288,6 +3321,7 @@ passing
 passion
 past
 pasta
+paste
 pastel
 pastor
 pat
@@ -3396,6 +3430,7 @@ piston
 pit
 pitch
 pitcher
+pivot
 pizza
 place
 placement
@@ -3434,12 +3469,14 @@ plump
 plunge
 plus
 ply
+poach
 pocket
 poem
 poet
 poetry
 point
 poke
+poker
 polar
 pole
 police
@@ -3480,6 +3517,7 @@ possession
 possibility
 possible
 post
+postal
 poster
 pot
 potato
@@ -3682,6 +3720,7 @@ radiant
 radiation
 radical
 radio
+radon
 rag
 rage
 raid
@@ -3868,6 +3907,7 @@ review
 revolution
 revolutionary
 reward
+rex
 rhetoric
 rhythm
 rib
@@ -3894,6 +3934,7 @@ risky
 ritual
 rival
 river
+roach
 road
 robot
 rock
@@ -4101,6 +4142,7 @@ shit
 sho
 shock
 shoe
+shoo
 shoot
 shooting
 shop
@@ -4200,12 +4242,14 @@ small
 smart
 smell
 smile
+smog
 smoke
 smooth
 smug
 snake
 snap
 sneak
+sniff
 snoop
 snow
 snowman
@@ -4261,6 +4305,7 @@ southern
 southwest
 sovereignty
 space
+spar
 spare
 spark
 spawn
@@ -4314,6 +4359,9 @@ spread
 spree
 spring
 sprinkle
+sprint
+sprite
+spritz
 spruce
 spy
 squad
@@ -4331,6 +4379,7 @@ stage
 stain
 stair
 stake
+stale
 stall
 stallion
 stamp
@@ -4370,6 +4419,7 @@ stiff
 still
 stimulate
 stimulus
+sting
 stink
 stir
 stitch
@@ -4542,6 +4592,7 @@ tap
 tape
 target
 taro
+tarot
 tarp
 task
 taste
@@ -4600,6 +4651,7 @@ test
 testify
 testimony
 testing
+tether
 text
 textbook
 texture
@@ -4966,7 +5018,9 @@ volatile
 volume
 voluntary
 volunteer
+vomit
 voodoo
+vortex
 vote
 voter
 voting

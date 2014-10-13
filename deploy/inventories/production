@@ -2,4 +2,4 @@
 webservers
 
 [webservers]
-coinname.me ansible_ssh_user=wang
+coinname.me:31337 ansible_ssh_user=wang
