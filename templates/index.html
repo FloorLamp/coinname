@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+  <title>Blocks on blocks on blocks</title>
+  <link href="//fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script async src="//platform.twitter.com/widgets.js"></script>
+  <style>
+    html {
+      height: 100%;
+      font-family: 'Lato', sans-serif;
+      color: #eee;
+      background: -webkit-linear-gradient(-10deg, #43cea2 0%, #185a9d 100%);
+      background: -moz-linear-gradient(-10deg, #43cea2 0%, #185a9d 100%);
+      background: -ms-linear-gradient(-10deg, #43cea2 0%, #185a9d 100%);
+      background: -o-linear-gradient(-10deg, #43cea2 0%, #185a9d 100%);
+      background: linear-gradient(-10deg, #43cea2 0%, #185a9d 100%);
+      text-align: center;
+    }
+    h2 {
+      margin-top: 50px;
+    }
+    .center {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+    .box {
+      display: inline-block;
+      width: 550px;
+      max-width: 80%;
+      margin-top: 50px;
+      padding: 20px 0;
+      border-radius: 10px;
+      border: 3px solid;
+      font-size: 50px;
+      position: relative;
+    }
+    .icon {
+      height: 32px;
+      width: 32px;
+      cursor: pointer;
+      position: absolute;
+      right: -60px;
+      top: 36px;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .reload {
+        width: 18px;
+        height: 9px;
+        border-style: solid;
+        border-width: 0px 3px 3px 3px;
+        border-color: #eee;
+        -webkit-border-radius: 0 0 50px 50px;
+        -moz-border-radius: 0 0 50px 50px;
+        border-radius: 0 0 50px 50px;
+        position: absolute;
+        top: 18px;
+        left: 2px;
+    }
+    .reload:after {
+        content: '';
+        width: 9px;
+        height: 9px;
+        border-style: solid;
+        border-width: 3px 0 0 3px;
+        border-color: #eee;
+        -webkit-border-radius: 50px 0 0 0;
+        -moz-border-radius: 50px 0 0 0;
+        border-radius: 50px 0 0 0;
+        position: absolute;
+        left: -3px;
+        bottom: 9px;
+    }
+    .reload:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px;
+        border-color: transparent transparent transparent #eee;
+        bottom: 13px;
+        left: 9px;
+    }
+    .tweet {
+      margin-top: 20px;
+    }
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      font-size: 14px;
+    }
+    a {
+      color: #eee;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <h2>Need a name for your bitcoin startup?</h2>
+  <div class="box">
+    <span id="name"></span>
+    <div class="icon">
+      <div class="reload"></div>
+    </div>
+  </div>
+  <div class="tweet">
+    <a id="tweet" href="https://twitter.com/intent/tweet?url=blocksonblocksonblocks.com&text=Need+a+name+for+your+%23bitcoin+startup%3F&via=floatfloatboat">Tweet this</a>
+  </div>
+</div>
+<footer>
+  <span>Made by <a href="https://twitter.com/floatfloatboat" target="_blank">@floatfloatboat</a></span>
+</footer>
+<script>
+  $(function() {
+    var $name = $('#name');
+    var $tweet = $('#tweet');
+    function get() {
+      $.ajax({
+        url: '/new',
+        success: function(data) {
+          $name.text(data);
+          $tweet.attr('href', 'https://twitter.com/intent/tweet?url=' + window.location + '&text=Need+a+name+for+your+%23bitcoin+startup%3F+I+found+' + data + '+on&via=floatfloatboat');
+        }
+      });
+    }
+    get();
+    $('.icon').click(get);
+  });
+</script>
+</body>
+</html>
